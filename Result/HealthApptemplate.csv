@@ -1,0 +1,70 @@
+,template,template_id,members_num
+0,onStandStepChanged <*>,Event0,260
+1,onReceive action: android.intent.action.SCREEN_ON,Event1,17
+2,processHandleBroadcastAction action:android.intent.action.SCREEN_ON,Event2,17
+3,flush sensor data,Event3,17
+4, getTodayTotalDetailSteps = <*>,Event4,242
+5,calculateCaloriesWithCache <*>,Event5,241
+6,calculateAltitudeWithCache <*>,Event6,241
+7,REPORT : <*> <*> <*> <*>,Event7,136
+8,onReceive action: android.intent.action.SCREEN_OFF,Event8,17
+9,isScreenOn true,Event9,1
+10,"screen status unknown, think screen on",Event10,1
+11,processHandleBroadcastAction action:android.intent.action.TIME_TICK,Event11,144
+12,flushTempCacheToDB by stand,Event12,1
+13,Alarm uploadStaticsToDB totalSteps=7163Calories:153367Floor:240Distance:5112,Event13,1
+14,writeDataToDB size 327,Event14,1
+15,"upLoadOneMinuteDataToEngine <*> 0, <*> 0, 20002",Event15,5
+16,getBinderPackageName packageName = com.huawei.health,Event16,8
+17,"getAppContext() isAppValid health or wear, packageName = com.huawei.health",Event17,2
+18,insertHiHealthData() checkAppType 0 appID = 1,Event18,2
+19,"insertHiHealthData() size = <*> app = 1, One Data Type = <*> packageName = com.huawei.health, writeStatType = 0",Event19,2
+20,"saveHealthDetailData() deviceID = 2, clientID=1, id=1",Event20,2
+21,"saveStatData() type <*> time = 1513958400000, statClient = 2, who is 1",Event21,4
+22,"new date =20171223, <*> <*> <*>",Event22,17
+23,"saveHealthDetailData() saveOneDetailData fail hiHealthData = 1513958400000, type = <*>",Event23,2
+24,bulkSaveDetailHiHealthData() size = <*> totalTime = <*>,Event24,2
+25,startListenerChange subscribeList = [1],Event25,2
+26,"insertHiHealthData() bulkSaveDetailHiHealthData fail errorCode = 4, errorMessage = ERR_DATA_INSERT",Event26,1
+27,insertHiHealthData() end totalTime = <*>,Event27,2
+28,uploadStaticsToDB() onResult type = 4 obj=true,Event28,1
+29,uploadStaticsToDB failed message=true,Event29,1
+30,checkInsertStatus stepSum or calorieSum is enough,Event30,2
+31,checkInsertStatus stepStatSum or calorieStatSum is enough,Event31,2
+32,stepSyncOrNot appSynTimes is 0,Event32,5
+33,"startInsertSportSync start auto sync, app is 1",Event33,2
+34,"checkFirstSyncByType no such data in db , type is 1 deviceCode is 0",Event34,2
+35,"startInsertSportSync first 500 steps sync, do all sync",Event35,2
+36,"startSync hiSyncOption = <*> syncMethod=2, syncScope=0, syncDataType=20000, syncModel=2, pushAction=0}, app = 1 who = 1",Event36,5
+37,needAutoSync autoSyncSwitch is open,Event37,5
+38,"initDataPrivacy the dataPrivacy switch is open, start push health data!",Event38,5
+39,initDataPrivacy the dataPrivacy is true,Event39,5
+40,"initUserPrivacy the userPrivacy switch is open, start push user data!",Event40,5
+41,initUserPrivacy the userPrivacy is true,Event41,5
+42,ifCanSync not! no cloud version,Event42,5
+43,sendSyncFailedBroadcast,Event43,5
+44,"saveRealTimeHealthDatasStat() size = 1, totalTime = 48",Event44,1
+45,InsertCallBack() onSuccess type = 0 data=true,Event45,1
+46,InsertEvent success begin:25233975 end:25233979,Event46,1
+47,setWriteDBLastDataMinute success,Event47,1
+48,flush2DB result success,Event48,1
+49,"timeStamp back, <*>",Event49,5
+50,startTimer start autoSync,Event50,3
+51,getTodaySportData mStepsRecordManager=com.huawei.health.g.c@8a2a501,Event51,6
+52,theDayChanged 1514044800216,Event52,1
+53,initEnviroument,Event53,1
+54,getStepCounterStatus,Event54,1
+55, getStepCounterStatus= true,Event55,1
+56,reStartStepCounter,Event56,1
+57,registersensorsuccess: true,Event57,1
+58,clear(),Event58,1
+59, getTodayBasicStandardSteps= <*>,Event59,2
+60,tryToRecordAsBasicStepData bWrite true,Event60,1
+61, getDiffTotalSteps= <*>,Event61,2
+62,setBasicStandardSteps basicStandardStep=3786 restartSteps=0,Event62,1
+63,reload : 3786 restar 0,Event63,1
+64,next day:steps0mLastReport7214,Event64,1
+65,setGoalNotifiShownRecord 1514044800237 false,Event65,1
+66,closeNotification...,Event66,1
+67,deleteHealthNotification(),Event67,1
+68,"checkCurrentDay a new day comes , reset basicSyncCondition, currentDay is 20171224 oldDay is 20171223",Event68,1

@@ -1,0 +1,88 @@
+,template,template_id,members_num
+0,reverse mapping checking getaddrinfo for <*> <*> failed - POSSIBLE BREAK-IN ATTEMPT!,Event0,5
+1,Invalid user webmaster from 173.234.31.186,Event1,2
+2,input_userauth_request: invalid user <*> [preauth],Event2,73
+3,pam_unix(sshd:auth): check pass; user unknown,Event3,135
+4,pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= <*> <*>,Event4,494
+5,Failed password for invalid user <*> from <*> port <*> ssh2,Event5,133
+6,Connection closed by <*> [preauth],Event6,34
+7,Invalid user <*> from <*>,Event7,43
+8,Received disconnect from <*> 11: Bye Bye [preauth],Event8,413
+9,Invalid user chen from 202.100.179.208,Event9,1
+10,Failed password for <*> from <*> port <*> ssh2,Event10,383
+11,message repeated 5 times: [ Failed password for root from <*> port <*> ssh2],Event11,2
+12,Disconnecting: Too many authentication failures for <*> [preauth],Event12,3
+13,PAM <*> more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= <*>,Event13,8
+14,PAM service(sshd) ignoring max retries; <*> > 3,Event14,7
+15,Invalid user utsims from 112.95.230.3,Event15,1
+16,Did not receive identification string from <*>,Event16,10
+17,Invalid user inspur from <*>,Event17,3
+18,Invalid user support from <*>,Event18,6
+19,error: Received disconnect from 195.154.37.122: 3: com.jcraft.jsch.JSchException: Auth fail [preauth],Event19,2
+20,Invalid user test from <*>,Event20,5
+21,Received disconnect from <*> 11: Closed due to user request. [preauth],Event21,7
+22,Failed none for invalid user 0 from <*> port <*> ssh2,Event22,3
+23,input_userauth_request: invalid user admin [preauth],Event23,21
+24,Failed none for invalid user admin from 5.188.10.180 port 52631 ssh2,Event24,1
+25,Invalid user default from 5.188.10.180,Event25,1
+26,PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= <*>,Event26,2
+27,Invalid user guest from <*>,Event27,3
+28,Invalid user matlab from 52.80.34.196,Event28,3
+29,error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth],Event29,45
+30,Invalid user anonymous from 103.99.0.122,Event30,2
+31,Invalid user ubnt from 103.99.0.122,Event31,2
+32,input_userauth_request: invalid user ubnt [preauth],Event32,2
+33,Invalid user cisco from 103.99.0.122,Event33,2
+34,input_userauth_request: invalid user cisco [preauth],Event34,2
+35,Failed password for invalid user cisco from 103.99.0.122 port 58309 ssh2,Event35,1
+36,Invalid user operator from 103.99.0.122,Event36,1
+37,Invalid user monitor from 103.99.0.122,Event37,1
+38,input_userauth_request: invalid user monitor [preauth],Event38,1
+39,Invalid user ftpuser from 103.99.0.122,Event39,2
+40,Invalid user pi from 103.99.0.122,Event40,1
+41,Invalid user Management from 103.99.0.122,Event41,1
+42,input_userauth_request: invalid user Management [preauth],Event42,1
+43,reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!,Event43,80
+44,Invalid user api from 185.190.58.151,Event44,1
+45,input_userauth_request: invalid user api [preauth],Event45,1
+46,Invalid user eoor from 187.141.143.180,Event46,1
+47,Invalid user butter from 187.141.143.180,Event47,1
+48,Invalid user redhat from 187.141.143.180,Event48,1
+49,input_userauth_request: invalid user redhat [preauth],Event49,1
+50,Invalid user oracle from <*>,Event50,6
+51,Invalid user postgres from 187.141.143.180,Event51,1
+52,Invalid user nagios from 187.141.143.180,Event52,1
+53,input_userauth_request: invalid user nagios [preauth],Event53,1
+54,Invalid user www from 187.141.143.180,Event54,1
+55,input_userauth_request: invalid user www [preauth],Event55,1
+56,Invalid user abc from 187.141.143.180,Event56,1
+57,input_userauth_request: invalid user abc [preauth],Event57,1
+58,Failed password for invalid user abc from 187.141.143.180 port 58106 ssh2,Event58,1
+59,Invalid user ted from 187.141.143.180,Event59,1
+60,Invalid user vnc from 187.141.143.180,Event60,1
+61,input_userauth_request: invalid user vnc [preauth],Event61,1
+62,Invalid user ghost from 187.141.143.180,Event62,1
+63,Invalid user ubuntu from <*>,Event63,2
+64,Invalid user deploy from 187.141.143.180,Event64,2
+65,input_userauth_request: invalid user deploy [preauth],Event65,2
+66,Invalid user oralce from 187.141.143.180,Event66,1
+67,Invalid user magnos from 187.141.143.180,Event67,2
+68,Invalid user ingrid from 187.141.143.180,Event68,1
+69,input_userauth_request: invalid user ingrid [preauth],Event69,1
+70,Invalid user jay from 187.141.143.180,Event70,1
+71,input_userauth_request: invalid user jay [preauth],Event71,1
+72,Invalid user cyrus from 187.141.143.180,Event72,1
+73,input_userauth_request: invalid user cyrus [preauth],Event73,1
+74,Invalid user FILTER from 104.192.3.34,Event74,1
+75,Accepted password for fztu from 119.137.62.142 port 49116 ssh2,Event75,1
+76,pam_unix(sshd:session): session opened for user fztu by (uid=0),Event76,1
+77,Received disconnect from 119.137.62.142: 11: disconnected by user,Event77,1
+78,pam_unix(sshd:session): session closed for user fztu,Event78,1
+79,Invalid user zhangyan from 183.62.140.253,Event79,1
+80,Invalid user dff from 183.62.140.253,Event80,1
+81,input_userauth_request: invalid user dff [preauth],Event81,1
+82,Invalid user cheng from 202.100.179.208,Event82,1
+83,Invalid user boot from 183.62.140.253,Event83,1
+84,input_userauth_request: invalid user boot [preauth],Event84,1
+85,Invalid user sandeep from 88.147.143.242,Event85,1
+86,fatal: Write failed: Connection reset by peer [preauth],Event86,1

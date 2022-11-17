@@ -1,0 +1,36 @@
+,template,template_id,members_num
+0,"Registered signal handlers for [TERM, HUP, INT]",Event0,1
+1,"Changing view acls to: yarn, curi",Event1,2
+2,"Changing modify acls to: yarn, curi",Event2,2
+3,"SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(yarn, curi); users with modify permissions: Set(yarn, curi)",Event3,2
+4,Slf4jLogger started,Event4,1
+5,Starting remoting,Event5,1
+6,Remoting started; listening on addresses :[akka.tcp://sparkExecutorActorSystem@mesos-slave-07:55904],Event6,1
+7,Successfully started service 'sparkExecutorActorSystem' on port 55904.,Event7,1
+8,Created local directory at /opt/hdfs/nodemanager/usercache/curi/appcache/application_1485248649253_0147/blockmgr-70293f72-844a-4b39-9ad6-fb0ad7e364e4,Event8,1
+9,MemoryStore started with capacity 17.7 GB,Event9,1
+10,Connecting to driver: spark://CoarseGrainedScheduler@10.10.34.11:48069,Event10,1
+11,Successfully registered with driver,Event11,1
+12,Starting executor ID 5 on host mesos-slave-07,Event12,1
+13,Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40984.,Event13,1
+14,Server created on 40984,Event14,1
+15,Trying to register BlockManager,Event15,1
+16,Registered BlockManager,Event16,1
+17,Got assigned task <*>,Event17,305
+18,Running task <*> in stage <*> (TID <*>,Event18,305
+19,Started reading broadcast variable <*>,Event19,37
+20,Block <*> stored as <*> in memory (estimated size <*> <*> free <*> KB),Event20,149
+21,Reading broadcast variable <*> took <*> ms,Event21,37
+22,"Partition <*> not found, computing it",Event22,75
+23,Input split: <*>,Event23,45
+24,"mapred.tip.id is deprecated. Instead, use mapreduce.task.id",Event24,1
+25,"mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id",Event25,1
+26,"mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap",Event26,1
+27,"mapred.job.id is deprecated. Instead, use mapreduce.job.id",Event27,1
+28,"mapred.task.partition is deprecated. Instead, use mapreduce.task.partition",Event28,1
+29,Times: total = <*> boot = <*> init = <*> finish = <*>,Event29,375
+30,Finished task <*> in stage <*> (TID <*> <*> bytes result sent to driver,Event30,300
+31,Found block <*> locally,Event31,257
+32,File Output Committer Algorithm version is 1,Event32,30
+33,Saved output of task <*> to <*>,Event33,30
+34,<*> Committed,Event34,30

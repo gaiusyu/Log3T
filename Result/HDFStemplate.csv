@@ -1,0 +1,15 @@
+,template,template_id,members_num
+0,PacketResponder <*> for block <*> terminating,Event0,311
+1,BLOCK* NameSystem.addStoredBlock: blockMap updated: <*> is added to <*> size <*>,Event1,314
+2,Received block <*> of size <*> from <*>,Event2,292
+3,Receiving block <*> src: <*> dest: <*>,Event3,292
+4,BLOCK* NameSystem.allocateBlock: <*> <*>,Event4,115
+5,Verification succeeded for <*>,Event5,20
+6,Deleting block <*> file <*>,Event6,263
+7,<*> Served block <*> to <*>,Event7,80
+8,<*> exception while serving <*> to <*>,Event8,80
+9,BLOCK* NameSystem.delete: <*> is added to invalidSet of <*>,Event9,224
+10,10.250.15.198:50010 Starting thread to transfer block blk_4292382298896622412 to 10.250.15.240:50010,Event10,1
+11,BLOCK* ask <*> to delete <*>,Event11,5
+12,Received block <*> src: <*> dest: <*> of size 67108864,Event12,2
+13,BLOCK* ask 10.250.14.38:50010 to replicate blk_-7571492020523929240 to datanode(s) 10.251.122.38:50010,Event13,1

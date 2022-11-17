@@ -1,0 +1,182 @@
+,template,template_id,members_num
+0,"printFreezingDisplayLogsopening app wtoken = AppWindowToken{9f4ef63 token=Token{a64f992 ActivityRecord{de9231d u0 com.tencent.qt.qtl/.activity.info.NewsDetailXmlActivity t761}}}, allDrawn= false, startingDisplayed = false, startingMoved = false, isRelaunching = false",Event0,1
+1,"acquire lock=233570404, flags=0x1, tag=""View Lock"", name=com.android.systemui, ws=null, uid=10037, pid=2227",Event1,1
+2,"ready=true, policy=3, wakefulness=1, <*> uasummary=0x1, bootcompleted=true, boostinprogress=false, waitmodeenable=false, mode=false, manual=38, auto=-1, adj=0.0userId=0",Event2,199
+3,Skipping <*> <*> <*> u0 <*> t761}}} -- going to hide,Event3,4
+4,visible is system.time.showampm,Event4,1
+5,mVisiblity.getValue is false,Event5,5
+6,visible is system.charge.show,Event6,1
+7,visible is system.call.count gt 0,Event7,1
+8,visible is system.message.count gt 0,Event8,1
+9,visible is system.ownerinfo.show,Event9,1
+10,"release:lock=233570404, flg=0x0, tag=""View Lock"", name=com.android.systemui"", ws=null, uid=10037, pid=2227",Event10,1
+11,"updateClipping isOverlap:false, getTopPadding=333.0, <*>",Event11,52
+12,updateDimmedActivatedHideSensitive overlap:false,Event12,52
+13,getRunningAppProcesses: caller <*> does not hold REAL_GET_TASKS; limiting output,Event13,81
+14,"release:lock=189667585, flg=0x0, tag=""*launch*"", name=android"", <*> uid=1000, pid=1702",Event14,8
+15,"setSystemUiVisibility <*> <*> <*> <*> <*> fullscreenStackVis=0 dockedStackVis=0, fullscreenStackBounds=Rect(0, 0 - <*> <*> dockedStackBounds=Rect(0, 0 - 0, 0)",Event15,200
+16,cancelAutohide,Event16,15
+17,Destroying surface Surface(name=SurfaceView - com.tencent.qt.qtl/com.tencent.video.player.activity.PlayerActivity) called by com.android.server.wm.WindowStateAnimator.destroyDeferredSurfaceLocked:942 com.android.server.wm.WindowManagerService.performDeferredDestroyWindow:3407 com.android.server.wm.Session.performDeferredDestroy:225 android.view.IWindowSession$Stub.onTransact:398 com.android.server.wm.Session.onTransact:136 android.os.Binder.execTransact:565 <bottom of call stack> <bottom of call stack>,Event17,1
+18,Destroying surface <*> called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 <*> <*> <*> <*> <*> <*>,Event18,15
+19,"release:lock=62617001, flg=0x0, tag=""WindowManager"", name=android"", ws=WorkSource{10113}, uid=1000, pid=1702",Event19,1
+20,userActivityNoUpdateLocked: <*> <*> <*> uid=1000,Event20,69
+21,"orientation change is complete, call stopFreezingDisplayLocked",Event21,1
+22,Screen frozen for +1s0ms due to Window{ca98d5 u0 com.tencent.qt.qtl/com.tencent.qt.qtl.activity.info.NewsDetailXmlActivity},Event22,1
+23,startAnimation begin,Event23,1
+24,startAnimation end,Event24,1
+25,"release:lock=226887582, flg=0x0, tag=""SCREEN_FROZEN"", name=android"", ws=null, uid=1000, pid=1702",Event25,1
+26,remove(PendingIntent{19abed0: PendingIntentRecord{a485420 com.tencent.qt.qtl broadcastIntent}}) changed bounds; rebatching,Event26,1
+27,<*> last=0); user=0 USER_ROTATION_LOCKED,Event27,3
+28,Application requested orientation <*> got rotation 0 which has compatible metrics,Event28,3
+29,"acquire <*> flags=0x1, tag=""RILJ_ACK_WL"", name=com.android.phone, ws=null, uid=1001, pid=2626",Event29,10
+30,shouldBlockLocation running ...,Event30,37
+31,shouldBlockLocation ret:false,Event31,33
+32,getNeighboringCellInfo calling app is com.amap.android.ams,Event32,5
+33,"<*> flg=0x0, tag=""RILJ_ACK_WL"", name=com.android.phone"", ws=null, uid=1001, pid=2626",Event33,7
+34,"<*> flg=0x0, tag=""AudioMix"", name=audioserver"", ws=null, uid=1041, pid=0",Event34,6
+35,"Releasing suspend blocker ""PowerManagerService.WakeLocks"".",Event35,33
+36,HBM brightnessIn =38,Event36,85
+37,HBM brightnessOut =38,Event37,85
+38,"Animating brightness: target=38, rate=200",Event38,85
+39,suspendAutohide,Event39,23
+40,interceptKeyTq <*> interactive=true keyguardActive=false policyFlags=2b000002 down <*> canceled false,Event40,14
+41,"interceptKeyBeforeQueueing: key <*> , result : 1",Event41,14
+42,resumeSuspendedAutohide,Event42,10
+43,querySoundEffectsEnabled...,Event43,17
+44,"acquire lock=189667585, flags=0x1, tag=""*launch*"", name=android, <*> uid=1000, pid=1702",Event44,8
+45,"Acquiring suspend blocker ""PowerManagerService.WakeLocks"".",Event45,33
+46,Bad activity token: android.os.BinderProxy@2bd79ce,Event46,1
+47,java.lang.ClassCastException: android.os.BinderProxy cannot be cast to com.android.server.am.ActivityRecord$Token,Event47,1
+48,schedulePeek,Event48,1
+49,getRingtonePlayer...,Event49,2
+50,disable: < expand <*> alerts <*> back home recent clock navigationbar search quick_settings >,Event50,6
+51,"updateLightsLocked, mInCall =false, mScreenOn = true, ledNotification == null?true",Event51,4
+52,"updateLightsLocked, turn off notificationLight",Event52,6
+53,"updateClipping isOverlap:true, getTopPadding=333.0, <*>",Event53,13
+54,updateDimmedActivatedHideSensitive overlap:true,Event54,13
+55,onExpandingStarted,Event55,2
+56,onTrackingStarted,Event56,1
+57,Destroying surface Surface(name=com.tencent.qt.qtl/com.tencent.qt.qtl.activity.info.NewsDetailXmlActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.removeLocked:1554 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2739 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2702 com.android.server.wm.WindowManagerService.removeWindowLocked:2691 com.android.server.wm.WindowManagerService.removeWindowLocked:2560 com.android.server.wm.WindowManagerService.removeWindow:2555,Event57,1
+58,cancelPeek: false,Event58,20
+59,"flingToHeight: vel=2849.079, expand=true, target=553.0, collapseSpeedUpFactor=1.0, expandBecauseOfFalsing=false",Event59,1
+60,onTrackingStopped: true,Event60,1
+61,onExpandingFinished,Event61,2
+62,Sending non-protected broadcast com.android.systemui.statusbar.visible.change from system 2227:com.android.systemui/u0a37 pkg com.android.systemui,Event62,2
+63,logNotificationVisibilityChanges runInThread start,Event63,6
+64,onNotificationVisibilityChanged called,Event64,6
+65,logNotificationVisibilityChanges runInThread over,Event65,6
+66,isSimPinSecure mSimDatas is null or empty,Event66,1
+67,registerCallback not in UI.,Event67,3
+68,android.util.AndroidRuntimeException: Must execute in UI,Event68,3
+69,*** register callback for com.android.systemui.statusbar.policy.KeyguardMonitor@712d093,Event69,1
+70,*** unregister callback for <*>,Event70,2
+71,[PhoneIntfMgr] getDataEnabled: subId=1 phoneId=1,Event71,1
+72,[PhoneIntfMgr] getDataEnabled: subId=1 retVal=true,Event72,1
+73,"onInterceptTouchEvent MotionEvent { action=ACTION_DOWN, actionButton=0, id[0]=0, <*> <*> toolType[0]=TOOL_TYPE_FINGER, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, <*> <*> deviceId=3, source=0x1002 }, mBlockTouches=false",Event73,2
+74,"onInterceptTouchEvent MotionEvent { action=ACTION_UP, actionButton=0, id[0]=0, <*> <*> toolType[0]=TOOL_TYPE_FINGER, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, <*> <*> deviceId=3, source=0x1002 }, mBlockTouches=false",Event74,2
+75,playSoundEffect effectType: 0,Event75,10
+76,"animateCollapsePanels:flags=2, force=true, delayed=true, mExpandedVisible=true",Event76,2
+77,START u0 {act=com.tencent.mobileqq.action.MAINACTIVITY flg=0x14000000 cmp=com.tencent.mobileqq/.activity.SplashActivity (has extras)} from uid 10111 on display 0,Event77,1
+78,"ActivityRecord info: <*> com.tencent.mobileqq.activity.SplashActivity}, euid: 0",Event78,2
+79,onNotificationClick called,Event79,2
+80,"cancelNotification, <*>",Event80,23
+81,"cancelNotification, cancelNotificationLocked, callingUid = <*> callingPid = <*>",Event81,2
+82,"cancelNotificationLocked called, tell the app, reason = <*>",Event82,2
+83,"cancelNotificationLocked, remove =com.tencent.mobileqq",Event83,2
+84,applyOptionsLocked: Unknown animationType=0,Event84,2
+85,"flingToHeight: vel=0.0, expand=false, target=0.0, collapseSpeedUpFactor=1.0, expandBecauseOfFalsing=false",Event85,1
+86,"Taking screenshot from Surface with crop:[Rect(0, 48 - 720, 1208)], width:[432], height:[696], <*> <*> inRotation:[false], rot:[0]",Event86,4
+87,updateNotificationShade: <*> <*>,Event87,13
+88,"animateCollapsePanels:flags=0, force=false, delayed=false, mExpandedVisible=true",Event88,1
+89,The change in focus caused us to need to do a layout begin,Event89,6
+90,The change in focus caused us to need to do a layout end,Event90,6
+91,setLightsOn(true),Event91,181
+92,removeNotificationChildren,Event92,12
+93,"Skipping, withExcluded: false, tr.intent:Intent { flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[264, 444][920, 908] }",Event93,14
+94,"Skipping, withExcluded: false, tr.intent:Intent { act=android.intent.action.MAIN flg=0x10840000 cmp=com.android.incallui/.InCallActivity (has extras) }",Event94,14
+95,"Skipping, withExcluded: false, tr.intent:Intent { <*> <*> (has extras) }",Event95,21
+96,"Skipping, withExcluded: false, tr.intent:Intent { act=com.android.contacts.action.CHOOSE_SUB dat=tel:xxxxxxxxxxx flg=0x10808000 cmp=com.android.contacts/.ChooseSubActivity (has extras) }",Event96,7
+97,"Skipping, withExcluded: false, tr.intent:Intent { act=android.intent.action.VIEW dat=file:///storage/emulated/0/Tencent/QQfile_recv/b.apk typ=application/vnd.android.package-archive flg=0x10800000 cmp=com.android.packageinstaller/.PackageInstallerActivity (has extras) }",Event97,7
+98,"getRecentTasks: <*> flags=62, totalTasks=46",Event98,14
+99,getRecentTasks: topActivity=ComponentInfo{com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity},Event99,8
+100,"cancelNotificationWithTag pid 28601, uid = 10111, tag = null, pkg =com.tencent.mobileqq, id <*>",Event100,20
+101,makeExpandedInvisible: mExpandedVisible=true,Event101,3
+102,closeQs,Event102,12
+103,instantCollapse,Event103,9
+104,getTasks: caller <*> does not hold REAL_GET_TASKS; limiting output,Event104,37
+105,Destroying surface Surface(name=com.tencent.qt.qtl/com.tencent.qt.qtl.activity.main.MainTabActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.destroyOrSaveSurface:2201 com.android.server.wm.AppWindowToken.destroySurfaces:374 com.android.server.wm.AppWindowToken.notifyAppStopped:400 com.android.server.wm.WindowManagerService.notifyAppStopped:4869 com.android.server.am.ActivityStack.activityStoppedLocked:1393 com.android.server.am.ActivityManagerService.activityStopped:7690,Event105,1
+106,isMusicActive...,Event106,12
+107,"Start dump, calling from : pid=12782, uid=1000",Event107,1
+108,"acquire lock=237091223, flags=0x1, tag=""WiredAccessoryManager"", name=android, ws=null, uid=1000, pid=1702",Event108,1
+109,setWiredDeviceConnectionState type: <*> state: 0,Event109,2
+110,"acquire lock=86152250, flags=0x1, tag=""handleAudioEvent"", name=android, ws=null, uid=1000, pid=1702",Event110,1
+111,"release:lock=237091223, flg=0x0, tag=""WiredAccessoryManager"", name=android"", ws=null, uid=1000, pid=1702",Event111,1
+112,"ActivityManagerService, attachApplication, callingPid = <*>",Event112,4
+113,"acquire <*> flags=0x1, tag=""AudioMix"", name=audioserver, ws=null, uid=1041, pid=0",Event113,5
+114,"release:lock=86152250, flg=0x0, tag=""handleAudioEvent"", name=android"", ws=null, uid=1000, pid=1702",Event114,1
+115,isBluetoothScoOn...,Event115,1
+116,getLastAudibleStreamVolume treamType: <*>,Event116,9
+117,getDevicesForStream streamType: 3,Event117,2
+118,cleanUpApplicationRecord -- <*>,Event118,6
+119,"cleanUpApplicationRecordLocked, pid: <*> restart: false",Event119,6
+120,"cleanUpApplicationRecordLocked, reset pid: <*> euid: 0",Event120,6
+121,stopWifiDisplayScanLocked <*>,Event121,12
+122,getMode...,Event122,1
+123,setSpeakerphoneOn on: true,Event123,1
+124,setSpeakerphoneOn on:true,Event124,1
+125,"sending alarm <*> type 3 when <*> PendingIntent{1749923: PendingIntentRecord{9600e20 android broadcastIntent}}}, repeatInterval = 0, listenerTag =time_tick",Event125,3
+126,Received TIME_TICK alarm; rescheduling,Event126,3
+127,scheduleTimeTickEvent triggerAtTime = <*>,Event127,3
+128,received broadcast android.intent.action.TIME_TICK,Event128,3
+129,handleTimeUpdate,Event129,3
+130,"sending alarm <*> type 3 when <*> <*> PendingIntentRecord{e204f60 com.android.phone broadcastIntent}}}, repeatInterval = 0, listenerTag =null",Event130,2
+131,Killing 23484:com.android.calendar/u0a13 (adj 906): empty for 1810s,Event131,1
+132,remove(PendingIntent{e4e2534: PendingIntentRecord{e204f60 com.android.phone broadcastIntent}}) changed bounds; rebatching,Event132,1
+133,Unable to start service Intent { act=com.tencent.android.tpush.action.keepalive cmp=com.qqgame.hlddz/com.tencent.android.tpush.service.XGPushService } U=0: not found,Event133,1
+134,unregisterAudioFocusListener...,Event134,1
+135,abandonAudioFocus,Event135,1
+136,"[HSM] stayAwake false uid: 10111, pid: 28601",Event136,1
+137,Pid:28601 MediaPlayer destructor,Event137,1
+138,Process com.tencent.mobileqq:qzone (pid 12236) has died,Event138,1
+139,Scheduling restart of crashed service com.tencent.mobileqq/cooperation.qzone.remote.logic.QzoneWebPluginProxyService in 1000ms,Event139,1
+140,"new Process app=ProcessRecord{6eaaf00 0:com.tencent.mobileqq:qzone/u0a111}, name: com.tencent.mobileqq:qzone, euid: 0",Event140,1
+141,Start proc 13003:com.tencent.mobileqq:qzone/u0a111 for service com.tencent.mobileqq/cooperation.qzone.remote.logic.QzoneWebPluginProxyService,Event141,1
+142,Destroying surface Surface(name=InputMethod) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.destroyOrSaveSurface:2201 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementInner:517 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:291 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:233 com.android.server.wm.WindowManagerService$H.handleMessage:8670 android.os.Handler.dispatchMessage:105,Event142,3
+143,"animateCollapsePanels:flags=0, force=false, delayed=false, mExpandedVisible=false",Event143,5
+144,Destroying surface Surface(name=com.tencent.mobileqq/com.tencent.mobileqq.activity.SplashActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.destroyOrSaveSurface:2201 com.android.server.wm.AppWindowToken.destroySurfaces:374 com.android.server.wm.AppWindowToken.notifyAppStopped:400 com.android.server.wm.WindowManagerService.notifyAppStopped:4869 com.android.server.am.ActivityStack.activityStoppedLocked:1393 com.android.server.am.ActivityManagerService.activityStopped:7690,Event144,2
+145,enqueueNotificationInternal: pkg=com.tencent.mobileqq id=121 notification=Notification(pri=1 contentView=null vibrate=[100] sound=null tick defaults=0x0 flags=0x11 color=0x00000000 vis=PRIVATE),Event145,1
+146,enqueueNotificationInternal: n.getKey = <*>,Event146,2
+147,getRingerMode...,Event147,3
+148,"updateLightsLocked, mInCall =false, mScreenOn = true, ledNotification == null?false",Event148,2
+149,addNotification <*>,Event149,2
+150,mHeadsUpExistenceChangedRunnable,Event150,4
+151,Marking notification as seen <*>,Event151,2
+152,onNotificationExpansionChanged called,Event152,2
+153,START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 <*> <*> <*> 1011]} from uid 10057 on display 0,Event153,2
+154,"ActivityRecord info: ActivityInfo{f39182 com.example.android.notepad.NotePadActivity}, euid: 0",Event154,1
+155,getRecentTasks: topActivity=ComponentInfo{com.example.android.notepad/com.example.android.notepad.NoteEditor},Event155,4
+156,"ACTIVITY check resid: com.example.android.notepad, <*>",Event156,2
+157,Destroying surface Surface(name=com.example.android.notepad/com.example.android.notepad.NoteEditor) called by com.android.server.wm.WindowStateAnimator.destroySurface:2060 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:913 com.android.server.wm.WindowState.destroyOrSaveSurface:2201 com.android.server.wm.AppWindowToken.destroySurfaces:374 com.android.server.wm.AppWindowToken.notifyAppStopped:400 com.android.server.wm.WindowManagerService.notifyAppStopped:4869 com.android.server.am.ActivityStack.activityStoppedLocked:1393 com.android.server.am.ActivityManagerService.activityStopped:7690,Event157,2
+158,shouldBlockLocation ret:true,Event158,4
+159,getAllCellInfo is blocked by permission manager . callingPackage = com.tencent.mobileqq,Event159,3
+160,getCellLocation is blocked by permission manager uid:10111 pid:28601,Event160,1
+161,isWiredHeadsetOn...,Event161,1
+162,getStreamVolume treamType: 5,Event162,1
+163,"updateIsPoweredLocked: wasPowered=false, mIsPowered=false, oldPlugType=0, mPlugType=0, mBatteryLevel=23",Event163,1
+164,received broadcast android.intent.action.BATTERY_CHANGED,Event164,1
+165,ACTION_BATTERY_CHANGED AMP: 0; Volt: 0,Event165,1
+166,updateChargingLocked: charging=false,Event166,1
+167,"onReceive, action:android.intent.action.BATTERY_CHANGED",Event167,1
+168,ACTION_BATTERY_CHANGED pluggedType: 0,Event168,1
+169,ApStaDisabledState what=155652,Event169,1
+170,DefaultState what=155652,Event170,1
+171,battery changed pluggedType: 0,Event171,1
+172,RefreshBatteryInfo isBatteryLow: 23,Event172,2
+173,ChargingSpeed Wattage: -1 ST: 5000000 --> 7500000,Event173,1
+174,handleBatteryUpdate,Event174,1
+175,enqueueNotificationInternal: pkg=com.tencent.mm id=4097 notification=Notification(pri=1 contentView=null vibrate=[] sound=null tick defaults=0x0 flags=0x101 color=0x00000000 category=msg vis=PRIVATE),Event175,1
+176,START u0 {flg=0x24000000 cmp=com.tencent.mm/.ui.LauncherUI (has extras)} from uid 10112 on display 0,Event176,1
+177,"ActivityRecord info: ActivityInfo{80c2e70 com.tencent.mm.ui.LauncherUI}, euid: 0",Event177,1
+178,startActivity called from non-Activity context; forcing Intent.FLAG_ACTIVITY_NEW_TASK for: Intent { flg=0x24000000 cmp=com.tencent.mm/.ui.LauncherUI (has extras) },Event178,1
+179,makeExpandedInvisible: mExpandedVisible=false,Event179,1
+180,getRecentTasks: topActivity=ComponentInfo{com.tencent.mm/com.tencent.mm.ui.LauncherUI},Event180,2

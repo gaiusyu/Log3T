@@ -1,0 +1,40 @@
+,template,template_id,members_num
+0,Component State Change: Component <*> is in the unavailable state <*>,Event0,12
+1,clusterAddMember (command <*>,Event1,2
+2,risBoot (command 1903),Event2,1
+3,<*> (command <*>,Event3,69
+4,wait (command <*>,Event4,66
+5,halt (command <*>,Event5,3
+6,Command has completed successfully,Event6,10
+7,Targeting <*> and <*> child of command <*>,Event7,9
+8,psu failure\ <*>,Event8,5
+9,Temperature (41C) exceeds warning threshold,Event9,2
+10,ClusterFileSystem: There is no server for ServerFileSystem domain <*>,Event10,32
+11,NIFF: node <*> has detected an available network connection on network <*> via interface <*>,Event11,93
+12,ServerFileSystem: An ServerFileSystem domain panic has occurred on storage442,Event12,1
+13,Fan speeds ( <*> <*> <*> <*> <*> <*> ),Event13,90
+14,Command has been aborted,Event14,1
+15,power/control problem,Event15,1
+16,Link error,Event16,13
+17,Link in reset,Event17,9
+18,Link ok,Event18,13
+19,Link error on broadcast tree <*>,Event19,4
+20,ServerFileSystem: ServerFileSystem domain <*> is full,Event20,12
+21,ClusterFileSystem: ServerFileSystem domain <*> is no longer served by node <*>,Event21,36
+22,running,Event22,162
+23,blocked,Event23,15
+24,not responding,Event24,60
+25,configured out,Event25,91
+26,inconsistent nodesets <*> <*> <ok> <*> <*> <ok> <*> <*> <ok> <*> <*> <ok>,Event26,4
+27,active,Event27,5
+28,not-responding,Event28,1
+29,starting,Event29,1
+30,closing,Event30,1
+31,normal,Event31,206
+32,warning,Event32,205
+33,critical,Event33,20
+34,Linkerror event interval expired,Event34,394
+35,risBoot (command 1903) Error: Timed out while waiting for SRM prompt: <ABORT code completed>,Event35,1
+36,boot (command 2092) Error: HALT asserted\ cannot continue,Event36,1
+37,Failed subcommands 3406,Event37,1
+38,link errors remain current,Event38,56

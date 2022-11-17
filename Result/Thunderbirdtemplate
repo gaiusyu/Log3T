@@ -1,0 +1,186 @@
+,template,template_id,members_num
+0,session closed for user root,Event0,24
+1,session opened for user root by (uid=0),Event1,19
+2,(root) CMD (run-parts /etc/cron.hourly),Event2,14
+3,data_thread() got not answer from any <*> datasource,Event3,819
+4,synchronized to <*> stratum <*>,Event4,568
+5,[ib_sm_sweep.c:1831]: ********************** NEW SWEEP ********************,Event5,62
+6,[ib_sm_sweep.c:1455]: No topology change,Event6,62
+7,[ib_sm_sweep.c:1482]: No configuration change required,Event7,62
+8,Local disconnected: Connection closed.,Event8,3
+9,connection lost: 'Connection closed.',Event9,3
+10,unable to qualify my own domain name <*> -- using short name,Event10,10
+11,"<*> from=root, <*> class=0, nrcpts=1, <*> relay=#7#@localhost",Event11,10
+12,"<*> to=root, ctladdr=root (0/0), <*> xdelay=00:00:00, mailer=relay, <*> relay=[127.0.0.1] [127.0.0.1], dsn=4.0.0, stat=Deferred: Connection refused by [127.0.0.1]",Event12,10
+13,DHCPDISCOVER from 00:11:43:e3:ba:c3 via eth1,Event13,5
+14,DHCPOFFER on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,Event14,5
+15,DHCPDISCOVER from 00:11:43:e3:ba:c3 via eth1: network A_net: no free leases,Event15,15
+16,DHCPACK on 10.100.4.251 to 00:11:43:e3:ba:c3 via eth1,Event16,3
+17,DHCPREQUEST for 10.100.4.251 (10.100.0.250) from 00:11:43:e3:ba:c3 via eth1,Event17,3
+18,START: tftp pid=16563 from=10.100.4.251,Event18,1
+19,DHCPREQUEST for 10.100.4.251 (10.100.0.250) from 00:11:43:e3:ba:c3 via eth1: unknown lease 10.100.4.251.,Event19,9
+20,RRD_update <*> <*> illegal attempt to update using time <*> when last update time is <*> (minimum one second step),Event20,10
+21,kernel time sync disabled 0041,Event21,1
+22,time reset +0.182379 s,Event22,1
+23,Received SNMP packet(s) from #34#,Event23,1
+24,kernel time sync enabled 0001,Event24,1
+25,(root) CMD (/projects/tbird/temps/get_temps a),Event25,1
+26,(root) CMD (/projects/tbird/temps/get_temps b),Event26,1
+27,(root) CMD (/projects/tbird/temps/get_temps c),Event27,1
+28,(root) CMD (/projects/tbird/temps/get_temps d),Event28,1
+29,(root) CMD (/projects/tbird/temps/get_temps e),Event29,1
+30,My unqualified host name <*> unknown; sleeping for retry,Event30,5
+31,CentOS-4 (Kernel Module GPG key),Event31,1
+32,(supports S0 S4 S5),Event32,1
+33,DSDT (v001 DELL PE BKC 0x00000001 MSFT 0x0100000e) @ 0x0000000000000000,Event33,1
+34,FADT (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd6b0,Event34,1
+35,HPET (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd81c,Event35,1
+36,HPET id: 0xffffffff base: 0xfed00000,Event36,1
+37,INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl),Event37,1
+38,INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level),Event38,1
+39,IOAPIC <*> <*> <*>,Event39,3
+40,<*> used by override.,Event40,3
+41,Interpreter enabled,Event41,1
+42,LAPIC <*> <*> enabled),Event42,4
+43,LAPIC_NMI <*> high edge lint[0x1]),Event43,4
+44,Local APIC address 0xfee00000,Event44,1
+45,MADT (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd724,Event45,1
+46,MCFG (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd854,Event46,1
+47,PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 7 10 11 12) *14,Event47,1
+48,PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 7 10 *11 12),Event48,1
+49,PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 7 10 11 12) *15,Event49,1
+50,"PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 7 10 11 12) *0, disabled.",Event50,1
+51,"PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 7 10 11 12) *0, disabled.",Event51,1
+52,"PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 7 10 11 12) *0, disabled.",Event52,1
+53,"PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 7 10 11 12) *0, disabled.",Event53,1
+54,"PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 7 10 11 12) *0, disabled.",Event54,1
+55,PCI Interrupt Routing Table <*>,Event55,10
+56,PCI Root Bridge [PCI0] (00:00),Event56,1
+57,"PCI interrupt <*> -> GSI <*> (level, low) -> IRQ <*>",Event57,11
+58,Power Button (FF) [PWRF],Event58,1
+59,Processor <*> (supports C1),Event59,4
+60,RSDP (v000 DELL ) @ 0x00000000000fd650,Event60,1
+61,RSDT (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd664,Event61,1
+62,SPCR (v001 DELL PE BKC 0x00000001 MSFT 0x0100000a) @ 0x00000000000fd7cc,Event62,1
+63,Subsystem revision 20040816,Event63,1
+64,Using IOAPIC for interrupt routing,Event64,1
+65,Intel(R) Xeon(TM) CPU 3.60GHz stepping 03,Event65,1
+66,L2 cache: 2048K,Event66,5
+67,Physical Processor ID: <*>,Event67,5
+68,"Trace cache: 12K uops, L1 D cache: 16K",Event68,5
+69,colour VGA+ 80x25,Event69,1
+70,mounted filesystem with ordered data mode.,Event70,3
+71,"sys_ia32.c, v 1.32 2002/03/24 13:02:28 ak Exp $",Event71,1
+72,"apic_id <*> version 32, address <*> GSI <*>",Event72,3
+73,"routing cache hash table of 65536 buckets, 1024Kbytes",Event73,1
+74,PCI Hot Plug PCI Core version: 0.5,Event74,1
+75,"root=LABEL=/ initrd=/x86_64/initrd-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr-admin console=tty0 console=ttyS0, 19200 fastboot BOOT_IMAGE=/x86_64/vmlinuz-2.6.9-5.0.5.EL-lustre-1.4.2-perfctr",Event75,1
+76,Registered protocol family <*>,Event76,5
+77,Using software bounce buffering for IO (SWIOTLB),Event77,1
+78,Probing PCI hardware (bus 00),Event78,1
+79,Transparent bridge - 0000:00:1e.0,Event79,1
+80,Using ACPI for IRQ routing,Event80,1
+81,Using MMCONFIG at e0000000,Event81,1
+82,Using configuration type 1,Event82,1
+83,Compressed image found at block 0,Event83,1
+84,Disabled at runtime.,Event84,1
+85,Initializing.,Event85,1
+86,Registering netfilter hooks,Event86,1
+87,Starting in permissive mode,Event87,1
+88,Unregistering netfilter hooks,Event88,1
+89,Hash tables configured (established 262144 bind 65536),Event89,1
+90,Direct-Access ANSI SCSI revision: 02,Event90,1
+91,Processor ANSI SCSI revision: 02,Event91,1
+92,Disk quotas dquot_6.5.1,Event92,1
+93,Mounted root (ext2 filesystem).,Event93,1
+94,MegaRAID Model: LD 0 RAID1 139G Rev: 516A,Event94,1
+95,PE/PV Model: 1x2 SCSI BP Rev: 1.0,Event95,1
+96,initialized,Event96,1
+97,initializing netlink socket (disabled),Event97,1
+98,passed.,Event98,1
+99,4.1.0-ioctl (2003-12-10) initialised: #36#@#37#,Event99,1
+100,allocating divert_blk for <*>,Event100,2
+101,not allocating divert_blk for non-ethernet device <*>,Event101,2
+102,v2.0:USB HID core driver,Event102,1
+103,<*> e1000_probe: Intel(R) PRO/1000 Network Connection,Event103,2
+104,eth0: e1000_watchdog: NIC Link is Up 1000 Mbps Full Duplex,Event104,1
+105,no floppy controllers found,Event105,1
+106,RNG not detected,Event106,1
+107,Wait for ready failed before probe !,Event107,6
+108,Assuming 33MHz system bus speed for PIO modes; override with idebus=xx,Event108,1
+109,Unknown cmd fd(5) cmd(80081272){00} arg(ffffda44) on /dev/sda,Event109,1
+110,(C) 2000-2002 Netfilter core team,Event110,4
+111,Installing public key data,Event111,1
+112,... autorun DONE.,Event112,4
+113,Autodetecting RAID arrays.,Event113,2
+114,"md driver 0.90.0 MAX_MD_DEVS=256, MD_SB_DISKS=27",Event114,1
+115,#38#-rh1 (Release Date: Fri Dec 10 19:02:14 EST 2004),Event115,1
+116,#39# (Release Date: Mon Sep 27 22:15:07 EDT 2004),Event116,1
+117,fw version:[516A] bios version:[H418],Event117,1
+118,probe new device 0x1028:0x0013:0x1028:0x016c: bus 2:slot 14:func 0,Event118,1
+119,PS/2 mouse device common for all mice,Event119,1
+120,succeeded,Event120,3
+121,portmap startup succeeded,Event121,1
+122,Starting ts_fixup: succeeded,Event122,1
+123,Version 1.0.6 Starting,Event123,1
+124,LSI Logic MegaRAID driver,Event124,1
+125,scanning scsi channel 0 [Phy 0] for non-raid devices,Event125,1
+126,scanning scsi channel 1 [virtual] for logical drives,Event126,1
+127,asking for cache data failed,Event127,1
+128,assuming drive cache: write through,Event128,1
+129,Registering secondary module capability,Event129,1
+130,"i8042 AUX port at 0x60, 0x64 irq 12",Event130,1
+131,"i8042 KBD port at 0x60, 0x64 irq 1",Event131,1
+132,syslog-ng startup succeeded,Event132,1
+133,syslog-ng version 1.6.7 starting,Event133,1
+134,Detected 3591.360 MHz processor.,Event134,1
+135,Using 14.318180 MHz HPET timer.,Event135,1
+136,Using HPET based timekeeping.,Event136,1
+137,Creating Topspin /dev entries:,Event137,1
+138,registered new driver hiddev,Event138,1
+139,registered new driver hub,Event139,1
+140,registered new driver usbfs,Event140,1
+141,registered new driver usbhid,Event141,1
+142,probe of vesafb0 failed with error -6,Event142,1
+143,"connection from ""#28#""",Event143,2
+144,"User #29#, coming from #30#, authenticated.",Event144,2
+145,Now running on #29#'s privileges.,Event145,2
+146,Mounting NFS filesystems: succeeded,Event146,1
+147,Mounting other filesystems: failed,Event147,1
+148,Warning: we failed to resolve data source name <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*> <*>,Event148,34
+149,RRD_update (/var/lib/ganglia/rrds/unspecified/badmin3/disk_total.rrd): illegal attempt to update using time 1131559854 when last update time is 1131559854 (minimum one second step),Event149,1
+150,Warning: we failed to resolve trusted host name dadmin3 dadmin4,Event150,1
+151,gmetad startup succeeded,Event151,1
+152,Server listening on :: port 22.,Event152,1
+153,error: Bind to port 22 on 0.0.0.0 failed: Address already in use.,Event153,1
+154,Cannot open file /dev/logsurfer for writing (No such file or directory),Event154,1
+155,Changing permissions on special file /dev/logsurfer,Event155,1
+156,xinetd startup succeeded,Event156,1
+157,Reading included configuration file: <*> <*> <*>,Event157,2
+158,Reading included configuration file: /etc/xinetd.d/chargen-udp [file=/etc/xinetd.d/chargen-udp] [line=18],Event158,1
+159,Reading included configuration file: /etc/xinetd.d/cups-lpd [file=/etc/xinetd.d/cups-lpd] [line=17],Event159,1
+160,Reading included configuration file: /etc/xinetd.d/daytime [file=/etc/xinetd.d/daytime] [line=11],Event160,1
+161,Reading included configuration file: /etc/xinetd.d/daytime-udp [file=/etc/xinetd.d/daytime-udp] [line=15],Event161,1
+162,Reading included configuration file: /etc/xinetd.d/echo [file=/etc/xinetd.d/echo] [line=15],Event162,1
+163,Reading included configuration file: /etc/xinetd.d/echo-udp [file=/etc/xinetd.d/echo-udp] [line=14],Event163,1
+164,Reading included configuration file: /etc/xinetd.d/eklogin [file=/etc/xinetd.d/eklogin] [line=15],Event164,1
+165,Reading included configuration file: /etc/xinetd.d/gssftp [file=/etc/xinetd.d/gssftp] [line=13],Event165,1
+166,Reading included configuration file: /etc/xinetd.d/klogin [file=/etc/xinetd.d/klogin] [line=14],Event166,1
+167,Reading included configuration file: /etc/xinetd.d/kshell [file=/etc/xinetd.d/kshell] [line=13],Event167,1
+168,Reading included configuration file: /etc/xinetd.d/ktalk [file=/etc/xinetd.d/ktalk] [line=13],Event168,1
+169,Reading included configuration file: /etc/xinetd.d/rsync [file=/etc/xinetd.d/rsync] [line=12],Event169,1
+170,Reading included configuration file: /etc/xinetd.d/tftp [file=/etc/xinetd.d/tftp] [line=13],Event170,1
+171,Reading included configuration file: /etc/xinetd.d/time [file=/etc/xinetd.d/time] [line=18],Event171,1
+172,Reading included configuration file: /etc/xinetd.d/time-udp [file=/etc/xinetd.d/time-udp] [line=17],Event172,1
+173,Started working: 1 available service,Event173,1
+174,removing chargen,Event174,2
+175,removing <*>,Event175,6
+176,removing echo,Event176,2
+177,removing ftp,Event177,1
+178,removing kshell,Event178,1
+179,removing ntalk,Event179,1
+180,removing printer,Event180,1
+181,removing rsync,Event181,1
+182,removing telnet,Event182,1
+183,xinetd Version 2.3.13 started with libwrap loadavg options compiled in.,Event183,1
+184,"Device: /dev/sda, Temperature changed -2 Celsius to 26 Celsius since last report",Event184,1

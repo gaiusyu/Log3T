@@ -1,0 +1,43 @@
+,template,template_id,members_num
+0,"<*> ""GET <*> HTTP/1.1"" status: 200 len: <*> time: <*>",Event0,931
+1,[instance: <*> VM Started (Lifecycle Event),Event1,22
+2,[instance: <*> VM Paused (Lifecycle Event),Event2,22
+3,[instance: <*> During sync_power_state the instance has a pending task (spawning). Skip.,Event3,43
+4,image 0673dd71-34c5-4fbb-86c4-40623fbe45b4 at (/var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742): checking,Event4,82
+5,"image 0673dd71-34c5-4fbb-86c4-40623fbe45b4 at (/var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742): in use: on this node 1 local, 0 on other nodes sharing this instance storage",Event5,82
+6,Active base files: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742,Event6,82
+7,Creating event <*> for instance <*>,Event7,22
+8,"10.11.10.1 ""POST <*> HTTP/1.1"" status: <*> len: <*> time: <*>",Event8,64
+9,[instance: <*> VM Resumed (Lifecycle Event),Event9,44
+10,[instance: <*> Instance spawned successfully.,Event10,22
+11,[instance: <*> Took <*> seconds to spawn the instance on the hypervisor.,Event11,22
+12,[instance: <*> Took <*> seconds to build instance.,Event12,43
+13,Auditing locally available compute resources for node cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us,Event13,15
+14,"Total usable vcpus: 16, total allocated vcpus: <*>",Event14,15
+15,Final resource view: name=cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us phys_ram=64172MB <*> phys_disk=15GB <*> total_vcpus=16 <*> pci_stats=[],Event15,15
+16,Compute_service record updated for cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us:cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us,Event16,15
+17,"10.11.10.1 ""DELETE <*> HTTP/1.1"" status: 204 len: 203 time: <*>",Event17,22
+18,[instance: <*> Terminating instance,Event18,22
+19,[instance: <*> Instance destroyed successfully.,Event19,22
+20,[instance: <*> Deleting instance files <*>,Event20,21
+21,[instance: <*> Deletion of <*> complete,Event21,21
+22,[instance: <*> Took <*> seconds to deallocate network for instance.,Event22,21
+23,Unknown base file: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742,Event23,30
+24,Removable base files: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742,Event24,30
+25,Removing base or swap file: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742,Event25,21
+26,HTTP exception thrown: No instances found for any event,Event26,21
+27,"[instance: <*> Attempting claim: memory 2048 MB, disk 20 GB, vcpus 1 CPU",Event27,21
+28,"[instance: <*> Total memory: 64172 MB, used: 512.00 MB",Event28,21
+29,"[instance: <*> memory limit: 96258.00 MB, free: 95746.00 MB",Event29,21
+30,"[instance: <*> Total disk: 15 GB, used: 0.00 GB",Event30,21
+31,"[instance: <*> disk limit not specified, defaulting to unlimited",Event31,21
+32,"[instance: <*> Total vcpu: 16 VCPU, used: 0.00 VCPU",Event32,21
+33,"[instance: <*> vcpu limit not specified, defaulting to unlimited",Event33,21
+34,[instance: <*> Claim successful,Event34,21
+35,[instance: <*> Creating image,Event35,21
+36,[instance: <*> VM Stopped (Lifecycle Event),Event36,21
+37,Successfully synced instances from host 'cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us'.,Event37,2
+38,Running instance usage audit for host cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us from 2017-05-16 05:00:00 to 2017-05-16 06:00:00. 87 instances.,Event38,1
+39,Base or swap file too young to remove: /var/lib/nova/instances/_base/a489c868f0c37da93b76227c91bb03908ac0e742,Event39,9
+40,The instance sync for host 'cp-1.slowvm1.tcloud-pg0.utah.cloudlab.us' did not match. Re-created its InstanceList.,Event40,5
+41,"While synchronizing instance power states, found 1 instances in the database and 0 instances on the hypervisor.",Event41,1

@@ -1,0 +1,7 @@
+,template,template_id,members_num
+0,workerEnv.init() ok /etc/httpd/conf/workers2.properties,Event0,569
+1,mod_jk child workerEnv in error state <*>,Event1,539
+2,jk2_init() Found child <*> in scoreboard slot <*>,Event2,836
+3,[client <*> Directory index forbidden by rule: /var/www/html/,Event3,32
+4,jk2_init() Can't find child <*> in scoreboard,Event4,12
+5,mod_jk child init 1 -2,Event5,12
