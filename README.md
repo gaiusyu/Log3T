@@ -23,4 +23,9 @@ For the parsers compared in our experiment, we reproduce the code in https://git
 
 paper link: https://arxiv.org/pdf/1811.03509.pdf.
 
+### Docker images
+Running log3t with docker will be slow because we don't set up to use gpu, and it takes about 50s to process a 2K dataset.
+1. docker pull docker.io/gaiusyu/log3t:v1
+2. docker run -it --gpus '"device=0"' --name log3t gaiusyu/log3t:v1
+
 
