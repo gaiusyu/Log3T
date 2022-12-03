@@ -20,12 +20,7 @@ benchmark_settings = {
 
 
 
-'Proxifier': {
-        'log_file': 'Proxifier/Proxifier_2k.log',
-        'log_format': '\[<Time>\] <Program> - <Content>',
-        'threshold': 2,
-        'regex': [r'<\d+\ssec', r'([\w-]+\.)+[\w-]+(:\d+)?', r'\d{2}:\d{2}(:\d{2})*', r'[KGTM]B'],
-    },
+
     'HDFS': {
         'log_file': 'HDFS/HDFS_2k.log',
         'log_format': '<Date> <Time> <Pid> <Level> <Component>: <Content>',
@@ -36,7 +31,7 @@ benchmark_settings = {
     'Hadoop': {
         'log_file': 'Hadoop/Hadoop_2k.log',
         'log_format': '<Date> <Time> <Level> \[<Process>\] <Component>: <Content>',
-        'threshold': 5,
+        'threshold': 4,
         'regex': [r'(\d+\.){3}\d+'],
     },
 
@@ -57,22 +52,28 @@ benchmark_settings = {
     'BGL': {
         'log_file': 'BGL/BGL_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>',
-        'threshold': 4,
+        'threshold': 3,
         'regex': [r'core\.\d+'],
     },
 
     'HPC': {
         'log_file': 'HPC/HPC_2k.log',
         'log_format': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>',
-        'threshold': 3,
+        'threshold': 4,
         'regex': [r'=\d+'],
     },
 
     'Thunderbird': {
         'log_file': 'Thunderbird/Thunderbird_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>',
-        'threshold': 8,
+        'threshold': 3,
         'regex': [r'(\d+\.){3}\d+'],
+    },
+    'Proxifier': {
+        'log_file': 'Proxifier/Proxifier_2k.log',
+        'log_format': '\[<Time>\] <Program> - <Content>',
+        'threshold': 9,
+        'regex': [r'<\d+\ssec', r'([\w-]+\.)+[\w-]+(:\d+)?', r'\d{2}:\d{2}(:\d{2})*', r'[KGTM]B'],
     },
 
     'Windows': {
@@ -92,7 +93,7 @@ benchmark_settings = {
     'Android': {
         'log_file': 'Android/Android_2k.log',
         'log_format': '<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>',
-        'threshold': 5,
+        'threshold': 3,
         'regex': [r'(/[\w-]+)+', r'([\w-]+\.){2,}[\w-]+', r'\b(\-?\+?\d+)\b|\b0[Xx][a-fA-F\d]+\b|\b[a-fA-F\d]{4,}\b'],
     },
 
@@ -131,12 +132,6 @@ benchmark_settings = {
         'regex': [r'([\w-]+\.){2,}[\w-]+'],
     },
 
-
-
-
-
-
-
 }
 
 
@@ -163,8 +158,9 @@ for dataset, setting in benchmark_settings.items():
     # Time = form['Time']
     arr = content.to_numpy()
     sentences = arr.tolist()
+    print(dataset)
     batch,log_sentence=Log3T.sentence_process(sentences,stage='classfy',regx=setting['regex'],regx_use=False) # 如果你想使用过滤器，可以在regx=""处添加,并且将regx_use改为True,过滤器的设计可以根据错误解析的结果进行设定
-    Group,new_group,predict_label=Log3T.classfywords(data=batch,output=dataset,weight=1,modelpath='/Log3T/model'+dataset+'9',log_sentence=log_sentence, threshold=setting['threshold'],template_group={},logid=0,stage='two')
+    Group,new_group,predict_label=Log3T.classfywords(data=batch,output=dataset,weight=1,modelpath='model'+dataset+'9',log_sentence=log_sentence, threshold=10.0,template_group={},logid=0,stage='two')
 
     end = datetime.datetime.now()
     PA=Log3T.get_PA(new_group,ground_truth_list,ground_truth,sum=2000)
@@ -218,113 +214,6 @@ print('ok')
 
 
 
- 'Proxifier': {
-        'log_file': 'Proxifier/Proxifier_2k.log',
-        'log_format': '\[<Time>\] <Program> - <Content>',
-        'threshold': 2
-    },
-    'HDFS': {
-        'log_file': 'HDFS/HDFS_2k.log',
-        'log_format': '<Date> <Time> <Pid> <Level> <Component>: <Content>',
-        'threshold': 4
-    },
-
-    'Hadoop': {
-        'log_file': 'Hadoop/Hadoop_2k.log',
-        'log_format': '<Date> <Time> <Level> \[<Process>\] <Component>: <Content>',
-        'threshold': 5
-    },
-
-    'Spark': {
-        'log_file': 'Spark/Spark_2k.log',
-        'log_format': '<Date> <Time> <Level> <Component>: <Content>',
-        'threshold': 6
-    },
-
-    'Zookeeper': {
-        'log_file': 'Zookeeper/Zookeeper_2k.log',
-        'log_format': '<Date> <Time> - <Level>  \[<Node>:<Component>@<Id>\] - <Content>',
-        'threshold': 5
-    },
-
-    'BGL': {
-        'log_file': 'BGL/BGL_2k.log',
-        'log_format': '<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>',
-        'threshold': 4
-    },
-
-    'HPC': {
-        'log_file': 'HPC/HPC_2k.log',
-        'log_format': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>',
-        'threshold': 3
-    },
-
-    'Thunderbird': {
-        'log_file': 'Thunderbird/Thunderbird_2k.log',
-        'log_format': '<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>',
-        'threshold': 8
-    },
-
-    'Windows': {
-        'log_file': 'Windows/Windows_2k.log',
-        'log_format': '<Date> <Time>, <Level>                  <Component>    <Content>',
-        'threshold': 3
-    },
-
-    'Linux': {
-        'log_file': 'Linux/Linux_2k.log',
-        'log_format': '<Month> <Date> <Time> <Level> <Component>(\[<PID>\])?: <Content>',
-        'threshold': 2
-    },
-
-    'Android': {
-        'log_file': 'Android/Android_2k.log',
-        'log_format': '<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>',
-        'threshold': 5
-    },
-
-    'HealthApp': {
-        'log_file': 'HealthApp/HealthApp_2k.log',
-        'log_format': '<Time>\|<Component>\|<Pid>\|<Content>',
-        'threshold': 5
-    },
-
-    'Apache': {
-        'log_file': 'Apache/Apache_2k.log',
-        'log_format': '\[<Time>\] \[<Level>\] <Content>',
-        'threshold': 3
-    },
-
-    'OpenSSH': {
-        'log_file': 'OpenSSH/OpenSSH_2k.log',
-        'log_format': '<Date> <Day> <Time> <Component> sshd\[<Pid>\]: <Content>',
-        'threshold': 3
-    },
-
-    'OpenStack': {
-        'log_file': 'OpenStack/OpenStack_2k.log',
-        'log_format': '<Logrecord> <Date> <Time> <Pid> <Level> <Component> \[<ADDR>\] <Content>',
-        'threshold': 4,
-    },
-
-    'Mac': {
-        'log_file': 'Mac/Mac_2k.log',
-        'log_format': '<Month>  <Date> <Time> <User> <Component>\[<PID>\]( \(<Address>\))?: <Content>',
-        'threshold': 10
-    },
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -348,7 +237,7 @@ print('ok')
     'Hadoop': {
         'log_file': 'Hadoop/Hadoop_2k.log',
         'log_format': '<Date> <Time> <Level> \[<Process>\] <Component>: <Content>',
-        'threshold': 5,
+        'threshold': 4,
         'regex': [r'(\d+\.){3}\d+'],
     },
 
@@ -369,21 +258,21 @@ print('ok')
     'BGL': {
         'log_file': 'BGL/BGL_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <Node> <Time> <NodeRepeat> <Type> <Component> <Level> <Content>',
-        'threshold': 4,
+        'threshold': 3,
         'regex': [r'core\.\d+'],
     },
 
     'HPC': {
         'log_file': 'HPC/HPC_2k.log',
         'log_format': '<LogId> <Node> <Component> <State> <Time> <Flag> <Content>',
-        'threshold': 3,
+        'threshold': 4,
         'regex': [r'=\d+'],
     },
 
     'Thunderbird': {
         'log_file': 'Thunderbird/Thunderbird_2k.log',
         'log_format': '<Label> <Timestamp> <Date> <User> <Month> <Day> <Time> <Location> <Component>(\[<PID>\])?: <Content>',
-        'threshold': 8,
+        'threshold': 3,
         'regex': [r'(\d+\.){3}\d+'],
     },
 
@@ -404,7 +293,7 @@ print('ok')
     'Android': {
         'log_file': 'Android/Android_2k.log',
         'log_format': '<Date> <Time>  <Pid>  <Tid> <Level> <Component>: <Content>',
-        'threshold': 5,
+        'threshold': 3,
         'regex': [r'(/[\w-]+)+', r'([\w-]+\.){2,}[\w-]+', r'\b(\-?\+?\d+)\b|\b0[Xx][a-fA-F\d]+\b|\b[a-fA-F\d]{4,}\b'],
     },
 

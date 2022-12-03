@@ -1,6 +1,7 @@
 import datetime
 import operator
 
+import numpy
 from pytorch_pretrained_bert import BertTokenizer
 import math
 import torch
@@ -505,6 +506,12 @@ def get_PA(group,ground_list,groundtruth,sum):
     return PA
 def classfywords(data,output,weight,modelpath,log_sentence, threshold,template_group,logid,stage):
     with torch.no_grad():
+       # sum_len = 0
+        #for log in log_sentence:
+         #   sum_len+=len(log)
+        #average=sum_len/len(log_sentence)
+        #print(str(average))
+
         batch = data
 
         input_ids, masked_tokens, masked_pos, = zip(*batch)
@@ -512,7 +519,7 @@ def classfywords(data,output,weight,modelpath,log_sentence, threshold,template_g
             torch.LongTensor(input_ids), torch.LongTensor(masked_tokens), \
             torch.LongTensor(masked_pos),
 
-        loader = Data.DataLoader(MyDataSet(input_ids, masked_tokens, masked_pos), 16, False)
+        loader = Data.DataLoader(MyDataSet(input_ids, masked_tokens, masked_pos), 128, False)
         model = self_model("train", vocab_size, weight).to(device)
         model.load_state_dict(torch.load(modelpath))
         template_group= template_group
@@ -520,6 +527,7 @@ def classfywords(data,output,weight,modelpath,log_sentence, threshold,template_g
         template_group.setdefault('1',[]).append(-1)
         log_id = 0
         predict_label=list()
+        beyond=0
         if stage=='one':
             log_id=logid
         for input_ids, masked_tokens, masked_pos in loader:
@@ -532,9 +540,11 @@ def classfywords(data,output,weight,modelpath,log_sentence, threshold,template_g
                 input_ids_this = input_ids[number]
                 input_ids_this = input_ids_this.cpu().detach().numpy().tolist()
                 true_length = len(log)
+                #threshold=0.8*true_length
                 predict=predict_e[number]
                 predict_distrbution = predict.cpu().detach().numpy().tolist()
                 predict_for_words = list()
+                sum_pre=0
                 for count in range(true_length):
                     count = count * word_maxlen
                     input_ids_this_wrod = input_ids_this[count:count + word_maxlen]
@@ -547,7 +557,11 @@ def classfywords(data,output,weight,modelpath,log_sentence, threshold,template_g
                         continue
                     probablity = predict_distrbution[count:count + word_maxlen]
                     representative = max(probablity[0:zero_index])
+                    sum_pre+=representative
                     predict_for_words.append(representative)
+                average=sum_pre/true_length
+                numpy_predict=numpy.array(predict_for_words)
+                std=numpy_predict.std()
                 predict_label.append(predict_for_words)
                 sorted_predict = np.argsort(predict_for_words)
                 sorted_log = list()
@@ -561,22 +575,26 @@ def classfywords(data,output,weight,modelpath,log_sentence, threshold,template_g
                         # my_re = re.compile(r'[A-Za-z]', re.S)
                         # res = re.findall(my_re, log[index])
                         # if len(res):
-                        if "<*>" not in log[index]:
+                        if "<*>" not in log[index]:  # for Log3T with tokenization filters
                             path.append(log[index])
                             threshold_count += 1
                     if threshold_count >= threshold:
                         break
+                    if predict_for_words[index]>average+3*std:
+                        break
+
 
                 matched = ''
                 mark = 0
                 for key in template_group.keys():
                     mark = 0
-                    for word in path:
-                        len1=re.split(' ',key)
-                        len1=len(len1)
-                        if word not in key:
+                    key1 = re.split(' ', key)
+                    for word in key1:
+
+                        if word not in path:
                             mark = 1
                             break
+
                     if mark == 0:
                         matched = key
                         break
@@ -591,7 +609,7 @@ def classfywords(data,output,weight,modelpath,log_sentence, threshold,template_g
                 log_id += 1
                 # sorted_log = ' '.join(sorted_log)
                 # print(sorted_log)
-        print(output + '## Parsing finished')
+
         for key in template_group.keys():
             group_list=template_group[key]
             if group_list[0]== -1:
