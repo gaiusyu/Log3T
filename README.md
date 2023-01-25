@@ -1,5 +1,5 @@
 # Log3T
-## Self-Supervised Log Parsing with Generalization Ability under Domain Shifts
+## Self-Supervised Log Parsing with Generalization Ability under Unseen Log Types
 
 
 
