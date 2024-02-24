@@ -1,11 +1,10 @@
 ,template,template_id,members_num
-0,<*> open through proxy proxy.cse.cuhk.edu.hk:5070 HTTPS,Event0,954
-1,"<*> close, <*> bytes <*> KB) sent, <*> bytes <*> <*> received, lifetime <*>",Event1,658
-2,"<*> close, <*> bytes <*> <*> <*> <*> <*> received, lifetime <*>",Event2,281
-3,183.62.156.108:22 open through proxy socks.cse.cuhk.edu.hk:5070 SOCKS5,Event3,2
-4,<*> error : A connection request was canceled before the completion.,Event4,31
-5,<*> error : Could not connect through proxy proxy.cse.cuhk.edu.hk:5070 - Proxy closed the connection unexpectedly.,Event5,3
-6,"<*> error : Could not connect through proxy proxy.cse.cuhk.edu.hk:5070 - Proxy server cannot establish a connection with the target, status code <*>",Event6,17
-7,"<*> close, <*> bytes <*> KB) sent, <*> bytes received, lifetime <*>",Event7,8
-8,<*> error : Could not connect to proxy proxy.cse.cuhk.edu.hk:5070 - Could not resolve proxy.cse.cuhk.edu.hk error 11001,Event8,20
-9,<*> error : Could not connect to proxy proxy.cse.cuhk.edu.hk:5070 - connection attempt failed with error 10061,Event9,26
+0,<*> <*> open through proxy socks.cse.cuhk.edu.hk <*> SOCKS5,Event0,2
+1,<*> <*> error Could not connect through proxy proxy.cse.cuhk.edu.hk <*> - Proxy closed the connection unexpectedly.,Event1,3
+2,<*> <*> error0 Could0 not0 connect to proxy proxy.cse.cuhk.edu.hk0 <*> - Could1 not1 resolve proxy.cse.cuhk.edu.hk1 error1 <*>,Event2,20
+3,<*> <*> error A connection request was canceled before the completion.,Event3,31
+4,<*> <*> error0 Could not connect to proxy proxy.cse.cuhk.edu.hk <*> - connection attempt failed with error1 <*>,Event4,25
+5,16.client-channel.google.com <*> error0 Could not connect to proxy proxy.cse.cuhk.edu.hk <*> - connection attempt failed with error1 <*>,Event5,1
+6,"<*> <*> close, <*> bytes0 sent, <*> bytes1 received, lifetime <*> <*>",Event6,947
+7,"<*> <*> error Could not connect through proxy proxy.cse.cuhk.edu.hk <*> - Proxy server cannot establish a connection with the target, status code <*>",Event7,17
+8,<*> <*> open through proxy <*> <*> HTTPS,Event8,954

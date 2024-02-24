@@ -150,7 +150,8 @@ E148,"ARPT: <*>.<*>: wl0: setup_keepalive: Seq: <*>, Ack: <*>, Win size: <*>"
 E149,"ARPT: <*>.<*>: wl0: wl_update_tcpkeep_seq: Original Seq: <*>, Ack: <*>, Win size: <*>"
 E150,"ARPT: <*>.<*>: wl0: wl_update_tcpkeep_seq: Updated seq/ack/win from UserClient Seq <*>, Ack <*>, Win size <*>"
 E151,ARPT: <*>.<*>: wlc_dump_aggfifo:
-E152,"Arranged view frame: {{<*>, <*>}, {<*>, <*>}}"
+E152,"Arranged view frame: {{<*>, <*>}
+{<*>, <*>}}"
 E153,ASL Sender Statistics
 E154,assertion failed: <*> [<*>-<*>-<*>-<*>-<*>]: <*>
 E155,ASSERTION FAILED: dvcAddrRef != ((void *)<*>) -[DriverServices getDeviceAddress:] line: <*>
@@ -279,7 +280,8 @@ E277,"nw_path_evaluator_start_helper_connection net_helper_path_evaluation_start
 E278,objc[<*>]: Class TSUAtomicLRUCache is implemented in both /Library/QuickLook/iWork.qlgenerator/Contents/MacOS/iWork and /System/Library/PrivateFrameworks/OfficeImport.framework/Versions/A/OfficeImport. One of the two will be used. Which one is undefined.
 E279,objc[<*>]: Class TSUCustomFormatData is implemented in both /Library/QuickLook/iWork.qlgenerator/Contents/MacOS/iWork and /System/Library/PrivateFrameworks/OfficeImport.framework/Versions/A/OfficeImport. One of the two will be used. Which one is undefined.
 E280,"Opened file <*>, size <*>, extents <*>, maxio <*> ssd <*>"
-E281,"Page bounds {{<*>, <*>}, {<*>, <*>}}"
+E281,"Page bounds {{<*>, <*>}
+{<*>, <*>}}"
 E282,"pages <*>, wire <*>, act <*>, inact <*>, cleaned <*> spec <*>, zf <*>, throt <*>, compr <*>, xpmapped <*>"
 E283,"Path not allowed in target domain: type = pid, path = <*> error = <*>: The specified service did not ship in the requestor's bundle, origin = <*>"
 E284,payload Data <*> <*>

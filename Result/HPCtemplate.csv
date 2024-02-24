@@ -1,40 +1,52 @@
 ,template,template_id,members_num
-0,Component State Change: Component <*> is in the unavailable state <*>,Event0,12
+0,Component0 State Change: Component1 <*> is in the unavailable state (HWID= <*>,Event0,12
 1,clusterAddMember (command <*>,Event1,2
-2,risBoot (command 1903),Event2,1
-3,<*> (command <*>,Event3,69
-4,wait (command <*>,Event4,66
-5,halt (command <*>,Event5,3
-6,Command has completed successfully,Event6,10
-7,Targeting <*> and <*> child of command <*>,Event7,9
-8,psu failure\ <*>,Event8,5
-9,Temperature (41C) exceeds warning threshold,Event9,2
-10,ClusterFileSystem: There is no server for ServerFileSystem domain <*>,Event10,32
-11,NIFF: node <*> has detected an available network connection on network <*> via interface <*>,Event11,93
-12,ServerFileSystem: An ServerFileSystem domain panic has occurred on storage442,Event12,1
-13,Fan speeds ( <*> <*> <*> <*> <*> <*> ),Event13,90
-14,Command has been aborted,Event14,1
-15,power/control problem,Event15,1
-16,Link error,Event16,13
-17,Link in reset,Event17,9
-18,Link ok,Event18,13
-19,Link error on broadcast tree <*>,Event19,4
-20,ServerFileSystem: ServerFileSystem domain <*> is full,Event20,12
-21,ClusterFileSystem: ServerFileSystem domain <*> is no longer served by node <*>,Event21,36
-22,running,Event22,162
-23,blocked,Event23,15
-24,not responding,Event24,60
-25,configured out,Event25,91
-26,inconsistent nodesets <*> <*> <ok> <*> <*> <ok> <*> <*> <ok> <*> <*> <ok>,Event26,4
-27,active,Event27,5
+2,risBoot (command <*>,Event2,1
+3,halt (command <*>,Event3,3
+4,bootGenvmunix (command <*>,Event4,2
+5,boot (command <*>,Event5,67
+6,wait (command <*>,Event6,66
+7,Command has completed successfully,Event7,10
+8,Targeting domains:node-D7 and nodes:node-[224\ <*> <*>,Event8,1
+9,Targeting domains:node-D4 and <*> child of command <*>,Event9,2
+10,Targeting <*> and <*> child of command <*>,Event10,2
+11,Targeting domains:node-D0 and nodes:node-0,Event11,1
+12,Targeting domains:node-D[0\ <*> and nodes:node-[27\ <*>,Event12,1
+13,Targeting domains:node-D2 and nodes:node-[64-95] child of command <*>,Event13,1
+14,Targeting domains:node-D2 and nodes:node-84,Event14,1
+15,psu failure\ ambient= <*>,Event15,5
+16,Temperature <*> exceeds warning threshold,Event16,2
+17,ClusterFileSystem: There is no server for ServerFileSystem domain <*>,Event17,32
+18,NIFF: node <*> detected a failed network0 connection on network1 <*> via interface alt0,Event18,2
+19,ServerFileSystem: An ServerFileSystem domain panic has occurred on <*>,Event19,1
+20,Fan speeds ( <*> <*> <*> <*> <*> <*> ),Event20,90
+21,Command has been aborted,Event21,1
+22,power/control problem,Event22,1
+23,Link error on broadcast tree <*>,Event23,4
+24,ServerFileSystem: ServerFileSystem domain <*> is full,Event24,12
+25,ClusterFileSystem: ServerFileSystem domain <*> is no longer served by node <*>,Event25,36
+26,inconsistent nodesets <*> <*> <ok>0 <*> <*> <ok>1 <*> <*> <ok>2 <*> <*> <ok>3,Event26,1
+27,inconsistent nodesets node-32 <*> <ok>0 node-34 <*> <ok>1 node-33 <*> <ok>2 node-35 <*> <ok>3,Event27,1
 28,not-responding,Event28,1
-29,starting,Event29,1
-30,closing,Event30,1
-31,normal,Event31,206
-32,warning,Event32,205
-33,critical,Event33,20
-34,Linkerror event interval expired,Event34,394
-35,risBoot (command 1903) Error: Timed out while waiting for SRM prompt: <ABORT code completed>,Event35,1
-36,boot (command 2092) Error: HALT asserted\ cannot continue,Event36,1
-37,Failed subcommands 3406,Event37,1
-38,link errors remain current,Event38,56
+29,inconsistent nodesets node-1 <*> <ok>0 node-2 <*> <ok>1 node-7 <*> <ok>2 node-4 <*> <ok>3 node-6 <*> <ok>4 node-5 <*> <ok>5 node-3 <*> <ok>6 node-14 <*> <ok>7 node-13 <*> <ok>8 node-12 <*> <ok>9 node-10 <*> <*> node-16 <*> <*> node-15 <*> <*>,Event29,1
+30,starting,Event30,1
+31,closing,Event31,1
+32,active,Event32,5
+33,inconsistent nodesets node-31 0x1fffffffe <ok>0 node-0 0xfffffffe0 <ok>1 node-1 0xfffffffe1 <ok>2 node-2 0xfffffffe2 <ok>3 node-30 0xfffffffe3 <ok>4,Event33,1
+34,blocked,Event34,15
+35,not responding,Event35,60
+36,configured out,Event36,91
+37,running,Event37,162
+38,normal,Event38,206
+39,ambient= <*>,Event39,292
+40,critical,Event40,20
+41,warning,Event41,205
+42,Link error,Event42,13
+43,Link ok,Event43,13
+44,Link in reset,Event44,9
+45,risBoot (command <*> Error: Timed out while waiting for SRM prompt: <ABORT code completed>,Event45,1
+46,boot (command <*> Error: HALT asserted\ cannot continue,Event46,1
+47,Failed subcommands <*>,Event47,1
+48,Linkerror event interval expired,Event48,394
+49,link errors remain current,Event49,56
+50,NIFF: node <*> has detected an available network0 connection on network1 <*> via interface <*>,Event50,91

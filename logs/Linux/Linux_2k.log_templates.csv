@@ -27,7 +27,7 @@ E25,Calibrating delay loop... <*>.<*> BogoMIPS
 E26,Capability LSM initialized
 E27,check pass; user unknown
 E28,Checking 'hlt' instruction... OK.
-E29,connection from <*> (<*>) at <*>:<*>:<*>
+E29,connection from <*> (<*>) at <*>
 E30,Console: colour VGA+ <*>
 E31,Couldn't authenticate user
 E32,"CPU <*> irqstacks, hard=<*> soft=<*>"
@@ -110,7 +110,7 @@ E108,"Total HugeTLB memory allocated, <*>"
 E109,Transparent bridge - <*>
 E110,usbcore: registered new driver hub
 E111,usbcore: registered new driver usbfs
-E112,User unknown timed out after <*> seconds at <*>:<*>:<*> <*>
+E112,User unknown timed out after <*> seconds at <*>
 E113,Using tsc for high-res timesource
 E114,Version <*>.<*>.<*> Starting
 E115,VFS: Disk quotas dquot_<*>.<*>.<*>

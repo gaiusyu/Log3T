@@ -1,55 +1,65 @@
 ,template,template_id,members_num
-0,Loaded Servicing Stack v6.1.7601.23505 with Core: C:\Windows\winsxs\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_6.1.7601.23505_none_681aa442f6fed7f0\cbscore.dll,Event0,2
-1,<*> WcpInitialize (wcp.dll version 0.0.0.6) called (stack <*> <*> <*> <*> <*> <*>,Event1,6
-2,Ending TrustedInstaller initialization.,Event2,2
-3,Starting the TrustedInstaller main loop.,Event3,2
-4,TrustedInstaller service starts successfully.,Event4,2
-5,SQM: Initializing online with Windows opt-in: False,Event5,2
-6,SQM: Cleaning up report files older than 10 days.,Event6,2
-7,SQM: Requesting upload of all unsent reports.,Event7,2
-8,"SQM: Failed to start upload with file pattern: C:\Windows\servicing\sqm\*_std.sqm, flags: 0x2 [HRESULT = 0x80004005 - E_FAIL]",Event8,4
-9,"SQM: Queued 0 file(s) for upload with pattern: C:\Windows\servicing\sqm\*_all.sqm, flags: 0x6",Event9,2
-10,SQM: Warning: Failed to upload all unsent reports. [HRESULT = 0x80004005 - E_FAIL],Event10,2
-11,"No startup processing required, TrustedInstaller service was not set as autostart, or else a reboot is still pending.",Event11,2
-12,NonStart: Checking to ensure startup processing was not required.,Event12,2
-13,"00000004 IAdvancedInstallerAwareStore_ResolvePendingTransactions (call 1) (flags = 00000004, progress = NULL, phase = 0, pdwDisposition = <*>",Event13,2
-14,"<*> Creating NT transaction (seq <*> objectname [6]""(null)""",Event14,3
-15,"00000006 Created NT transaction (seq 1) result 0x00000000, handle <*>",Event15,2
-16,<*> CSI perf trace:,Event16,3
-17,"NonStart: Success, startup processing not required as expected.",Event17,2
-18,Startup processing thread terminated normally,Event18,2
-19,<*> CSI Store <*> <*> initialized,Event19,3
-20,Session: <*> initialized by client WindowsUpdateAgent.,Event20,608
-21,Warning: Unrecognized packageExtended attribute.,Event21,280
-22,Expecting attribute name [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM],Event22,224
-23,Failed to get next element [HRESULT = 0x800f080d - CBS_E_MANIFEST_INVALID_ITEM],Event23,224
-24,Failed to internally open package. [HRESULT = 0x800f0805 - CBS_E_INVALID_PACKAGE],Event24,18
-25,Read out cached package applicability for package: <*> ApplicableState: <*> <*>,Event25,558
-26,Failed to create backup log cab. [HRESULT = 0x80070001 - ERROR_INVALID_FUNCTION],Event26,2
-27,Reboot mark refs incremented to: 1,Event27,1
-28,Scavenge: Starts,Event28,1
-29,"00000009@2016/9/27:20:40:53.744 CSI Transaction @0x47e9e0 initialized for deployment engine {d16d444c-56d8-11d5-882d-0080c847b195} with flags 00000002 and client id [10]""TI6.0_0:0/""",Event29,1
-30,Scavenge: Begin CSI Store,Event30,1
-31,0000000a Performing 1 operations; 1 are not lock/unlock and follow:,Event31,1
-32,"0000000b Store coherency cookie matches last scavenge cookie, skipping scavenge.",Event32,1
-33,0000000c ICSITransaction::Commit calling IStorePendingTransaction::Apply - coldpatching=FALSE applyflags=7,Event33,1
-34,"0000000e Created NT transaction (seq 2) result 0x00000000, handle @0xb8",Event34,1
-35,"Scavenge: Completed, disposition: 0X1",Event35,1
-36,00000010@2016/9/27:20:40:54.787 CSI Transaction @0x47e9e0 destroyed,Event36,1
-37,Reboot mark refs: 0,Event37,1
-38,Idle processing thread terminated normally,Event38,1
-39,Ending the TrustedInstaller main loop.,Event39,1
-40,Starting TrustedInstaller finalization.,Event40,1
-41,Ending TrustedInstaller finalization.,Event41,1
-42,Starting TrustedInstaller initialization.,Event42,1
-43,"Loading offline registry hive: SOFTWARE, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SOFTWARE' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SOFTWARE'.",Event43,1
-44,"Loading offline registry hive: SYSTEM, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SYSTEM' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SYSTEM'.",Event44,1
-45,Loading offline registry hive: <*> into registry key <*> from path <*>,Event45,4
-46,"Loading offline registry hive: SAM, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SAM' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SAM'.",Event46,1
-47,"Loading offline registry hive: COMPONENTS, into registry key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/COMPONENTS' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\COMPONENTS'.",Event47,1
-48,Offline image is: read-only,Event48,1
-49,"Disabling manifest caching, because the image is not writeable.",Event49,1
-50,00000008@2016/9/28:16:00:46.635 PopulateComponentFamiliesKey - Begin,Event50,1
-51,00000009@2016/9/28:16:01:03.072 PopulateComponentFamiliesKey - End,Event51,1
-52,Session: 11152_142416105 initialized by client SPP.,Event52,1
-53,Unloading offline registry hive: <*>,Event53,8
+0,<*> <*> <*> <*> WcpInitialize (wcp.dll version <*> called (stack <*> <*> <*> <*> <*> <*>,Event0,3
+1,Reboot mark refs incremented to: <*>,Event1,1
+2,Scavenge: Starts,Event2,1
+3,<*> <*> <*> <*> CSI Transaction <*> initialized for deployment engine <*> with flags <*> and client id [ <*> <*> <*>,Event3,1
+4,Scavenge: Begin CSI Store,Event4,1
+5,<*> Performing <*> operations; <*> are not lock/unlock and follow: ,Event5,1
+6,"<*> Store coherency cookie matches last scavenge cookie, skipping scavenge.",Event6,1
+7,<*> ICSITransaction: <*> Commit calling IStorePendingTransaction: <*> Apply - coldpatching= FALSE applyflags= <*>,Event7,1
+8,"Scavenge: Completed, disposition: <*>",Event8,1
+9,<*> <*> <*> <*> CSI Transaction <*> destroyed,Event9,1
+10,Reboot mark refs: <*>,Event10,1
+11,Idle processing thread terminated normally,Event11,1
+12,Ending the TrustedInstaller main loop.,Event12,1
+13,Starting TrustedInstaller finalization.,Event13,1
+14,Ending TrustedInstaller finalization.,Event14,1
+15,Starting TrustedInstaller initialization.,Event15,1
+16,Loaded Servicing Stack <*> with Core: C: \Windows\winsxs\amd64_microsoft-windows-servicingstack_31bf3856ad364e35_6.1.7601.23505_none_681aa442f6fed7f0\cbscore.dll,Event16,2
+17,<*> <*> <*> <*> WcpInitialize (wcp.dll version <*> called (stack <*> <*> <*> @0xffeee97c <*> @0xffeedb2f),Event17,1
+18,<*> <*> <*> <*> WcpInitialize (wcp.dll version <*> called (stack <*> <*> <*> <*> @0xffeee97c <*>,Event18,1
+19,<*> <*> <*> <*> WcpInitialize (wcp.dll version <*> called (stack <*> <*> <*> <*> @0xffeed7de @0xffeedb2f),Event19,1
+20,Ending TrustedInstaller initialization.,Event20,2
+21,Starting the TrustedInstaller main loop.,Event21,2
+22,TrustedInstaller service starts successfully.,Event22,2
+23,SQM: Initializing online with Windows opt-in: False,Event23,2
+24,SQM: Cleaning up report files older than <*> days.,Event24,2
+25,SQM: Requesting upload of all unsent reports.,Event25,2
+26,"SQM: Failed to start upload with file pattern: C: \Windows\servicing\sqm\*_std.sqm, flags: <*> [ HRESULT = <*> - E_FAIL] ",Event26,2
+27,SQM: Failed to start standard sample upload. [ HRESULT = <*> - E_FAIL] ,Event27,2
+28,"SQM: Queued <*> file(s) for upload with pattern: C: \Windows\servicing\sqm\*_all.sqm, flags: <*>",Event28,2
+29,SQM: Warning: Failed to upload all unsent reports. [ HRESULT = <*> - E_FAIL] ,Event29,2
+30,"No startup processing required, TrustedInstaller service was not set as autostart, or else a reboot is still pending.",Event30,2
+31,NonStart: Checking to ensure startup processing was not required.,Event31,2
+32,"<*> IAdvancedInstallerAwareStore_ResolvePendingTransactions (call <*> (flags <*> <*> progress <*> NULL, phase <*> <*> pdwDisposition <*> <*>",Event32,2
+33,"<*> Creating NT transaction (seq <*> objectname [ <*> ""(null)""",Event33,3
+34,<*> Created NT transaction (seq <*> result <*> handle <*>,Event34,3
+35,<*> <*> <*> <*> CSI perf trace: ,Event35,3
+36,"NonStart: Success, startup processing not required as expected.",Event36,2
+37,Startup processing thread terminated normally,Event37,2
+38,"Loading offline registry0 hive: SECURITY, into registry1 key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SECURITY' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SECURITY'.",Event38,1
+39,"Loading offline registry0 hive: SAM, into registry1 key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SAM' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\SAM'.",Event39,1
+40,"Loading offline registry0 hive: COMPONENTS, into registry1 key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/COMPONENTS' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\COMPONENTS'.",Event40,1
+41,"Loading offline registry0 hive: DEFAULT, into registry1 key '{bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/DEFAULT' from path '\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\Windows\System32\config\DEFAULT'.",Event41,1
+42,Loading offline registry0 hive: <*> into registry1 key <*> from path <*>,Event42,4
+43,Offline image is: read-only,Event43,1
+44,"Disabling manifest caching, because the image is not writeable.",Event44,1
+45,<*> <*> <*> <*> PopulateComponentFamiliesKey - Begin,Event45,1
+46,<*> <*> <*> <*> PopulateComponentFamiliesKey - End,Event46,1
+47,Session: <*> initialized by client SPP.,Event47,1
+48,Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SOFTWARE,Event48,1
+49,Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SYSTEM,Event49,1
+50,Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SECURITY,Event50,1
+51,Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/SAM,Event51,1
+52,Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/COMPONENTS,Event52,1
+53,Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/System32/config/DEFAULT,Event53,1
+54,Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Users/default/ntuser.dat,Event54,1
+55,Unloading offline registry hive: {bf1a281b-ad7b-4476-ac95-f47682990ce7}GLOBALROOT/Device/HarddiskVolumeShadowCopy2/Windows/system32/smi/store/Machine/schema.dat,Event55,1
+56,Failed to create backup log cab. [ HRESULT = <*> - ERROR_INVALID_FUNCTION] ,Event56,2
+57,<*> CSI Store <*> <*> initialized,Event57,3
+58,Expecting attribute name [ HRESULT = <*> - CBS_E_MANIFEST_INVALID_ITEM] ,Event58,224
+59,Failed to get next element [ HRESULT = <*> - CBS_E_MANIFEST_INVALID_ITEM] ,Event59,224
+60,Warning: Unrecognized packageExtended attribute.,Event60,280
+61,Failed to internally open package. [ HRESULT = <*> - CBS_E_INVALID_PACKAGE] ,Event61,18
+62,Session: <*> initialized by client WindowsUpdateAgent.,Event62,608
+63,Read out cached package applicability for package: <*> ApplicableState: <*> CurrentState: <*>,Event63,558
